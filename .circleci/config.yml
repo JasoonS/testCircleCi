@@ -36,7 +36,7 @@ jobs:
             else
               echo "master-fail"
             fi
-            if [[ ! -z "$CIRCLE_PULL_REQUEST" || curl "https://api.github.com/repos/JasoonS/testCircleCi/pulls/${CIRCLE_PULL_REQUEST##*/}?access_token=$GH_AUTH_TOKEN" | grep -q 'JasoonS:master' ]]; then
+            if [[ ! -z "$CIRCLE_PULL_REQUEST" ]] || [[ curl "https://api.github.com/repos/JasoonS/testCircleCi/pulls/${CIRCLE_PULL_REQUEST##*/}?access_token=$GH_AUTH_TOKEN" | grep -q 'JasoonS:master' ]]; then
               echo "master-full"
             else
               echo "master-fail"
