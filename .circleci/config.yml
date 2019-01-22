@@ -53,3 +53,4 @@ workflows:
   my-workflow:
     jobs:
       - build:
+          context: cash_tokenizer_ci
