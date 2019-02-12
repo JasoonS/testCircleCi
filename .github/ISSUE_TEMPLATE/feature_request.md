@@ -2,8 +2,8 @@
 name: Feature request
 about: Suggest an idea for this project
 title: ''
-labels: duplicate
-assignees: JasoonS
+labels: bug, duplicate, good first issue
+assignees: ''
 
 ---
 
